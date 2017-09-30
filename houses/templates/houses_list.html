@@ -1,0 +1,25 @@
+{% extends "finanse.html" %}
+
+{% block application %}
+<div class="container">
+<div class="row">
+{% for house in houses %}
+
+
+
+    <a href="{% url 'house' house_id=house.id%}">{{ house.name }} <br> </a>
+        {% if house.photo %}
+            <img src="{{ house.photo.url }}" alt="{{ house.name }}" style="width:120px;margin: 0px 15px 30px 0px" class="pull-left">
+        {% endif %}
+
+
+    <small class="text-muted"><b>Цена (руб)</b>:{{ house.price }}
+        {{ house.description }}<br><br></small>
+
+
+{% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+

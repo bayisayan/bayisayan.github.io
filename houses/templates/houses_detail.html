@@ -1,0 +1,23 @@
+{% extends "finanse.html" %}
+
+
+{% block html_title %}
+    Дом {{ house.name }}
+{% endblock %}
+
+{% block application %}
+<a href="{% url 'home' %}">Главная</a>
+
+
+        {{ house.name }}
+        {% if house.photo%}
+            <img src="{{ house.photo.url }}" alt="{{ house.name }}">
+        {% endif %}
+        <div>{{ house.price }}</div>
+        <div>{{ house.description }}</div>
+
+
+
+{% endblock %}
+
+

